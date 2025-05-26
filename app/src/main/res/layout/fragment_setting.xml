@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.chatapp.mvvm.ChatAppviewModel" />
+    </data>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:background="@color/midnightblue"
+
+        > <!-- Thêm thuộc tính này để tránh khoảng trắng trên cùng -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+
+
+            android:id="@+id/settingChatContainer"
+
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:ignore="ScrollViewSize">
+
+            <!-- Toolbar -->
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/toolbarMain"
+                android:background="#191970"
+                > <!-- Điều chỉnh paddingTop nếu cần -->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/back"
+                    android:id="@+id/settingBackBtn"
+                    android:layout_marginEnd="10dp"/>
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- CircleImageView -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/settingUpdateImage"
+                android:layout_marginBottom="15dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/person"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FE2C54"/>
+
+            <!-- Title Text -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="start"
+                android:text="Update Your Profile"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"/>
+
+            <!-- Name Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:background="@android:color/transparent"
+                app:boxBackgroundColor="@android:color/transparent">
+                <EditText
+                    android:id="@+id/settingUpdateName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="@={viewModel.name}"
+                    android:hint="Name"
+                    android:fontFamily="@font/nunito_bold"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    tools:background="@android:color/transparent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Update Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewvideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="200dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <Button
+                    android:id="@+id/settingUpdateButton"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:text="Update"
+                    android:textColor="@color/fixed_white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/midnightblue"
+                    android:elevation="4dp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

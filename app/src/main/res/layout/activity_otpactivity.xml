@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activity.OTPActivity">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Backbutton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:backgroundTint="@color/purple_700"
+        android:contentDescription="Back button"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/back_icon"
+        app:iconGravity="end"
+        app:iconTint="@null"
+        app:iconSize="25dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_weight="20"
+
+        android:src="@drawable/otp_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:letterSpacing="0.01"
+        android:gravity="center"
+        android:text="Enter OTP sent to your email"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_extrabold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextOTPInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/black"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:id="@+id/loginOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="OTP"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="50"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_next_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFFFF"
+            app:backgroundTint="@color/purple_700"
+            app:cornerRadius="50dp" />
+
+
+        <ProgressBar
+            android:id="@+id/login_progress_bar"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/my_primary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resend_otp_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Resend OTP in 30 sec" />
+
+</LinearLayout>

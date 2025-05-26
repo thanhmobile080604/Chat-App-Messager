@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:padding="16dp">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/fullvideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/fullvideoView"
+        android:src="@drawable/close"  />
+
+    <ImageView
+        android:id="@+id/btnDowload"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@+id/btnClose"
+        android:layout_alignTop="@+id/btnClose"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/icon_dowload" />
+</RelativeLayout>
