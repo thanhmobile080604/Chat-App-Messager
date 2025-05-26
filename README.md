@@ -23,6 +23,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 4. MVVM architecture  
 5. Kotlin Coroutines  
 6. Supabase Storage (used instead of Firebase Storage due to cost)
+7. Kotlin, XML
 
 ---
 
