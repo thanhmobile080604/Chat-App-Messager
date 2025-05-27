@@ -83,6 +83,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/9f972df3-24e8-4c8f-bb3d-4273acfae9e8" width="250"/>
 <img src="https://github.com/user-attachments/assets/c13ae9e8-d798-4e0c-bfc9-abc79facc2eb" width="250"/>
 
+
 ---
 
 ## :sparkles: Lastword:
