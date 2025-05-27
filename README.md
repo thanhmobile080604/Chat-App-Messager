@@ -3,7 +3,7 @@ Developed by Thanh 20225406 - from 25/03/2025 to 26/05/2025 - a student from HUS
 
 
 Project II – Final Product Submission 
-## :telephone_receiver: Contact infomations: 
+## :telephone_receiver: Contact information: 
 Phone: 0813311259
 
 
