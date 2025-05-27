@@ -45,7 +45,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 
 ### 3. OTP Verify Screen
 <img src="https://github.com/user-attachments/assets/033f1d1c-6c74-4452-99a4-5545842bc4a9" width="250"/>
-<img src="https://github.com/user-attachments/assets/5810b294-f992-4fae-a22c-348b65f931ee" width="400" height="300"/>
+<img src="https://github.com/user-attachments/assets/5810b294-f992-4fae-a22c-348b65f931ee" width="450" height="300"/>
 
 ### 4. Home Fragment(It will remains the same home screen when being multitasking cleared)
 <img src="https://github.com/user-attachments/assets/efc0526c-21a8-4240-ab0c-96e192180d94" width="250"/>
