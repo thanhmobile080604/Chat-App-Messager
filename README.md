@@ -12,7 +12,7 @@ Email: thanh08062004@gmail.com
 ---
 
 ## :blush: Foreword:
-Thank you for having a glance through my very first and serious IT project in general and Android app project in specific. Even though it's just a simple chat app that you can see and clone everywhere on GitHub (and of course I did have some backup from other sources), I can proudly say that this is still a decent work of mine. So let’s stop beating around the bush and get to the details:
+Thank you for having a glance through my very first and serious IT project in general and Android app project in specific. Even though it's just a simple chat app that you can see and clone everywhere on GitHub (and of course I did have some backup from other sources), I can proudly say that this is still a decent work of mine. So let stop beating around the bush and get to the details:
 
 ---
 
