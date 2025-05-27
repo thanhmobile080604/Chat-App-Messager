@@ -52,7 +52,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/1eb873f6-217a-49fa-99c3-88ed3d17efd5" width="250"/>
 <img src="https://github.com/user-attachments/assets/8cf8dce6-3978-4e07-9256-187c22eab1c0" width="250"/>
 
-### 5. Setting Fragment(It alerts you when there are unsaved changes; otherwise, it proceeds normally."
+### 5. Setting Fragment(It alerts you when there are unsaved changes; otherwise, it proceeds normally)
 <img src="https://github.com/user-attachments/assets/5e3dc637-d913-4730-95cf-5cc0c8ad1904" width="250"/>
 <img src="https://github.com/user-attachments/assets/3e2ff37e-9056-4ef1-9510-ae74dcb86be4" width="250"/>
 <img src="https://github.com/user-attachments/assets/9a8140e5-9bb1-4a01-8b68-d236ddb47c38" width="250"/>
@@ -72,7 +72,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/439690f8-386c-4aef-a3b8-845b4101112c" width="250"/>
 <img src="https://github.com/user-attachments/assets/2dbdd0a9-de2e-42e3-b8c4-47c6e27919f9" width="250"/>
 
-#### +) Detect external link (Links can take you there when clicked):
+#### +) Detect external link (Links can take you there when clicked)
 <img src="https://github.com/user-attachments/assets/22883d5a-903a-4a6e-98ea-b24ae1d8176f" width="250"/>
 <img src="https://github.com/user-attachments/assets/7dc72ea7-8462-45bf-8158-58b7f082e854" width="250"/>
 
