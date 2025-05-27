@@ -3,7 +3,7 @@ Developed by Thanh 20225406 - from 25/03/2025 to 26/05/2025 - a student from HUS
 
 
 Project II – Final Product Submission 
-### Contact infomations: 
+### :telephone_receiver: Contact infomations: 
 Phone: 0813311259
 
 
@@ -11,7 +11,7 @@ Email: thanh08062004@gmail.com
 
 ---
 
-### Foreword:
+### :blush: Foreword:
 Thank you for having a glance through my very first and serious IT project in general and Android app project in specific. Even though it's just a simple chat app that you can see and clone everywhere on GitHub (and of course I did have some backup from other sources), I can proudly say that this is still a decent work of mine. So let’s stop beating around the bush and get to the details:
 
 ---
@@ -84,7 +84,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/c13ae9e8-d798-4e0c-bfc9-abc79facc2eb" width="250"/>
 
 
-### Lastword:
+### :sparkles: Lastword:
 I also handled various exceptions throughout the app — although it's hard to demonstrate them in screenshots, you’re welcome to explore the code for more details.
 
 Thank you once again for your attention. I know this project may not be anything extraordinary, and my README might still be a bit rough. But the journey of building this app has truly motivated me and sparked a strong desire to grow — to one day become a skilled mobile app developer. I sincerely appreciate your time and hope to get feedback from you guys!
