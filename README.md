@@ -59,23 +59,23 @@ Thank you for having a glance through my very first and serious IT project in ge
 #### 6. Chat Fragment(It includes timestamp logic, last active status, and message seen indicators)
 <img src="https://github.com/user-attachments/assets/252522c2-39d5-4dc4-8d47-64c9c3160f22" width="250"/>
 
-#### +) Sending Media (Image, Video)
+##### +) Sending Media (Image, Video)
 <img src="https://github.com/user-attachments/assets/ff9099b6-9c8f-43f1-8453-34a85c40f4fb" width="250"/>
 <img src="https://github.com/user-attachments/assets/ad962b96-db74-458c-9a70-c89f71a457b5" width="250"/>
 <img src="https://github.com/user-attachments/assets/fe85ed1d-fbd2-4f52-8ec1-8c5c929eb531" width="250"/>
 
-#### +) View full image and video when clicked, with an option to download
+##### +) View full image and video when clicked, with an option to download
 <img src="https://github.com/user-attachments/assets/412c1228-856b-4641-9e3c-c6b88bbb03ea" width="250"/>
 
-#### +) Sending PDF file (Files can be viewed and dowloaded instantly when clicked)
+##### +) Sending PDF file (Files can be viewed and dowloaded instantly when clicked)
 <img src="https://github.com/user-attachments/assets/439690f8-386c-4aef-a3b8-845b4101112c" width="250"/>
 <img src="https://github.com/user-attachments/assets/2dbdd0a9-de2e-42e3-b8c4-47c6e27919f9" width="250"/>
 
-#### +) Detect external link (Links can take you there when clicked):
+##### +) Detect external link (Links can take you there when clicked):
 <img src="https://github.com/user-attachments/assets/22883d5a-903a-4a6e-98ea-b24ae1d8176f" width="250"/>
 <img src="https://github.com/user-attachments/assets/7dc72ea7-8462-45bf-8158-58b7f082e854" width="250"/>
 
-#### +) Dark Mode (some example screenshots)
+#### 7. Dark Mode (some example screenshots)
 <img src="https://github.com/user-attachments/assets/ce752a69-e1da-4b80-ab6c-73df47e731d7" width="250"/>
 <img src="https://github.com/user-attachments/assets/00c02438-57ae-442b-b5ce-16468bbaa6d3" width="250"/>
 <img src="https://github.com/user-attachments/assets/8f1b0e22-ae80-4efa-8af1-f8f628ed2121" width="250"/>
