@@ -41,10 +41,11 @@ Thank you for having a glance through my very first and serious IT project in ge
 ### 2. Signup & Forget Password Screens(It will send you otp through your email registered)
 <img src="https://github.com/user-attachments/assets/93fce0c5-5283-45e5-9ad3-0b3b5d32f516" width="250"/>
 <img src="https://github.com/user-attachments/assets/45231087-7d23-479b-b5b1-cd0c5c5acfd8" width="250"/>
+<img src="https://github.com/user-attachments/assets/1bbd7d8f-8b67-4697-a5bc-818caf539bd9" width="250"/>
 
 ### 3. OTP Verify Screen
 <img src="https://github.com/user-attachments/assets/033f1d1c-6c74-4452-99a4-5545842bc4a9" width="250"/>
-<img src="https://github.com/user-attachments/assets/5810b294-f992-4fae-a22c-348b65f931ee" width="400" height="250"/>
+<img src="https://github.com/user-attachments/assets/5810b294-f992-4fae-a22c-348b65f931ee" width="400" height="300"/>
 
 ### 4. Home Fragment(It will remains the same home screen when being multitasking cleared)
 <img src="https://github.com/user-attachments/assets/efc0526c-21a8-4240-ab0c-96e192180d94" width="250"/>
