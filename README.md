@@ -76,11 +76,12 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/7dc72ea7-8462-45bf-8158-58b7f082e854" width="250"/>
 
 #### +) Dark Mode (some example screenshots)
-<img src="https://github.com/user-attachments/assets/ce752a69-e1da-4b80-ab6c-73df47e731d7/z6642701693451_f293d54b392504c4fb849592f2514904" width="250"/>
-<img src="https://github.com/user-attachments/assets/00c02438-57ae-442b-b5ce-16468bbaa6d3/z6642701711488_0dab1ad91aae55d865b97e1371899a05" width="250"/><img src="https://github.com/user-attachments/assets/8f1b0e22-ae80-4efa-8af1-f8f628ed2121/z6642701691936_d2401ac52badeeaef3c143e3653e4532" width="250"/>
-<img src="https://github.com/user-attachments/assets/82f88aeb-b873-4856-8e41-8fc99df72298/z6642701692175_c08fdfd33520a7342cc727aabac7947b" width="250"/>
-<img src="https://github.com/user-attachments/assets/9f972df3-24e8-4c8f-bb3d-4273acfae9e8/onelinechat" width="250"/>
-<img src="https://github.com/user-attachments/assets/c13ae9e8-d798-4e0c-bfc9-abc79facc2eb/onlinehome" width="250"/>
+<img src="https://github.com/user-attachments/assets/ce752a69-e1da-4b80-ab6c-73df47e731d7" width="250"/>
+<img src="https://github.com/user-attachments/assets/00c02438-57ae-442b-b5ce-16468bbaa6d3" width="250"/>
+<img src="https://github.com/user-attachments/assets/8f1b0e22-ae80-4efa-8af1-f8f628ed2121" width="250"/>
+<img src="https://github.com/user-attachments/assets/82f88aeb-b873-4856-8e41-8fc99df72298" width="250"/>
+<img src="https://github.com/user-attachments/assets/9f972df3-24e8-4c8f-bb3d-4273acfae9e8" width="250"/>
+<img src="https://github.com/user-attachments/assets/c13ae9e8-d798-4e0c-bfc9-abc79facc2eb" width="250"/>
 
 
 ### Lastword:
