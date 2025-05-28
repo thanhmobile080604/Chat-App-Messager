@@ -76,7 +76,11 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/22883d5a-903a-4a6e-98ea-b24ae1d8176f" width="250"/>
 <img src="https://github.com/user-attachments/assets/7dc72ea7-8462-45bf-8158-58b7f082e854" width="250"/>
 
-### 7. Dark Mode (some example screenshots)
+### 7. Message encrypted before transmission to server
+
+<img src="https://github.com/user-attachments/assets/a795e72a-2c9c-43cb-9c01-548a9f5281f7" width="650" height="300"/>
+
+### 8. Dark Mode (some example screenshots)
 <img src="https://github.com/user-attachments/assets/ce752a69-e1da-4b80-ab6c-73df47e731d7" width="250"/>
 <img src="https://github.com/user-attachments/assets/00c02438-57ae-442b-b5ce-16468bbaa6d3" width="250"/>
 <img src="https://github.com/user-attachments/assets/8f1b0e22-ae80-4efa-8af1-f8f628ed2121" width="250"/>
