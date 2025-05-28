@@ -45,6 +45,7 @@ class MessageAdapter : RecyclerView.Adapter<MessageHolder>() {
     private var listOfMessage = listOf<Message>()
     private var listener: onMessageClickListener? = null
     private var imageUrl: String? = null
+    private val players = mutableListOf<ExoPlayer>()
 
     private var LEFT = 0
     private var RIGHT = 1
@@ -94,6 +95,7 @@ class MessageAdapter : RecyclerView.Adapter<MessageHolder>() {
             holder.cardView.visibility = View.VISIBLE
 
             val player = ExoPlayer.Builder(holder.itemView.context).build()
+            players.add(player)
             holder.videoView.player = player
             holder.videoView.controllerShowTimeoutMs = 0
             holder.exoPlayer = player
@@ -205,10 +207,12 @@ class MessageAdapter : RecyclerView.Adapter<MessageHolder>() {
 
         holder.image.setOnClickListener() {
             Utils.showFullImage(holder.itemView.context, message.message!!)
+            releaseAllPlayers()
         }
 
         holder.chatImage.setOnClickListener {
             Utils.showFullImage(holder.itemView.context, imageUrl!!)
+            releaseAllPlayers()
         }
 
         holder.videoView.setOnClickListener {
@@ -217,7 +221,7 @@ class MessageAdapter : RecyclerView.Adapter<MessageHolder>() {
                 holder.exoPlayer?.playWhenReady = false
                 Utils.showFullVideo(it, message.message!!)
             }
-
+            releaseAllPlayers()
         }
 
 
@@ -280,6 +284,9 @@ class MessageAdapter : RecyclerView.Adapter<MessageHolder>() {
 
     }
 
+     fun releaseAllPlayers() {
+        players.forEach { it.stop() }
+    }
 
     fun setMessageList(list: List<Message>) {
         this.listOfMessage = list
