@@ -16,7 +16,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 
 ---
 
-## 🚀 Technology used:
+## 🚀 Techniques used:
 1. Firestore  
 2. Navigation component  
 3. Two-way databinding  
