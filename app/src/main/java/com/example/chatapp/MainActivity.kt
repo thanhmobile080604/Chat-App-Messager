@@ -47,6 +47,22 @@ class MainActivity : AppCompatActivity() {
         if (auth.currentUser != null) {
             firestore.collection("Users").document(Utils.getUiLoggedIn())
                 .update("status", Utils.getTimeStamp())
+
+            val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
+            val ChatFromHome = navHostFragment?.childFragmentManager?.fragments?.find {
+                it is ChatFromHome
+            } as? ChatFromHome
+
+            val ChatFragment = navHostFragment?.childFragmentManager?.fragments?.find {
+                it is ChatFragment
+            } as? ChatFragment
+
+            if (ChatFromHome != null) {
+                ChatFromHome.stopvideo()
+            }
+            if (ChatFragment != null) {
+                ChatFragment.stopvideo()
+            }
         }
     }
 
