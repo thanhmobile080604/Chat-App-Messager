@@ -209,8 +209,13 @@ class ChatFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        (chatBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
         statusListener?.remove()
         statusListener = null
+    }
+
+    fun stopvideo(){
+        (chatBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
     }
 
     @SuppressLint("QueryPermissionsNeeded")
