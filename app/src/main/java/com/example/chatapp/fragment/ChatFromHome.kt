@@ -226,8 +226,13 @@ class ChatFromHome : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+         (chatfromhomeBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
         statusListener?.remove()
         statusListener = null
+    }
+
+    fun stopvideo(){
+        (chatfromhomeBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
     }
 
     @SuppressLint("QueryPermissionsNeeded")
