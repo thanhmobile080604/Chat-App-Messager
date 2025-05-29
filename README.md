@@ -48,7 +48,7 @@ Thank you for having a glance through my very first and serious IT project in ge
 <img src="https://github.com/user-attachments/assets/5810b294-f992-4fae-a22c-348b65f931ee" width="500" height="300"/>
 
 ### 4. Home Fragment(It will remains the same home screen when being multitasking cleared)
-<img src="https://github.com/user-attachments/assets/efc0526c-21a8-4240-ab0c-96e192180d94" width="250"/>
+<img src="https://github.com/user-attachments/assets/8ed851a4-52d5-46ff-8289-d6e4451ce76b" width="250"/>
 <img src="https://github.com/user-attachments/assets/1eb873f6-217a-49fa-99c3-88ed3d17efd5" width="250"/>
 <img src="https://github.com/user-attachments/assets/8cf8dce6-3978-4e07-9256-187c22eab1c0" width="250"/>
 
