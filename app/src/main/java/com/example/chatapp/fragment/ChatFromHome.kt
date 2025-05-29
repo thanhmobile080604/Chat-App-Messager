@@ -168,7 +168,7 @@ class ChatFromHome : Fragment() {
             builder.setItems(options) { dialog, item ->
                 when {
                     options[item] == "Take Photo" -> takePhotoWithCamera()
-                    options[item] == "Take video" -> takeVideoWithCamera()
+                    options[item] == "Take Video" -> takeVideoWithCamera()
                     options[item] == "Choose image from Gallery" -> pickImageFromGallery()
                     options[item] == "Choose video from Gallery" -> pickVideoFromGallery()
                     options[item] == "Cancel" -> dialog.dismiss()
