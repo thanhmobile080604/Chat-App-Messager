@@ -23,6 +23,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.media3.exoplayer.ExoPlayer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.chatapp.R
@@ -115,11 +116,12 @@ class ChatFragment : Fragment() {
                 textViewStatus.text = status
                 statusOnline.setImageResource(R.drawable.onlinestatus)
             } else {
-                if(Utils.getFormatedDate(status).length > 7 && Utils.getFormatedDate(status).first().isDigit()) {
+                if (Utils.getFormatedDate(status).length > 7 && Utils.getFormatedDate(status)
+                        .first().isDigit()
+                ) {
                     textViewStatus.text =
                         "Last active: ${(Utils.getFormatedDate(status)).dropLast(8)}"
-                }
-                else textViewStatus.text = "Last active: ${Utils.getFormatedDate(status)}"
+                } else textViewStatus.text = "Last active: ${Utils.getFormatedDate(status)}"
                 statusOnline.setImageResource(R.drawable.offlinestatus)
             }
         }
@@ -135,6 +137,7 @@ class ChatFragment : Fragment() {
 
         friendImage.setOnClickListener {
             Utils.showFullImage(requireContext(), args.users.imageUrl!!)
+            (chatBinding.messagesRecyclerView.adapter as? MessageAdapter)?.ReleasingPlayer()
         }
 
 
@@ -150,8 +153,14 @@ class ChatFragment : Fragment() {
             )
         }
 
-        uploadImage.setOnClickListener{
-            val options = arrayOf<CharSequence>("Take Photo", "Take Video", "Choose image from Gallery", "Choose video from Gallery", "Cancel")
+        uploadImage.setOnClickListener {
+            val options = arrayOf<CharSequence>(
+                "Take Photo",
+                "Take Video",
+                "Choose image from Gallery",
+                "Choose video from Gallery",
+                "Cancel"
+            )
             val builder = AlertDialog.Builder(requireContext())
             builder.setTitle("Choose your media")
             builder.setItems(options) { dialog, item ->
@@ -209,13 +218,9 @@ class ChatFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        (chatBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
+
         statusListener?.remove()
         statusListener = null
-    }
-
-    fun stopvideo(){
-        (chatBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
     }
 
     @SuppressLint("QueryPermissionsNeeded")
@@ -278,6 +283,7 @@ class ChatFragment : Fragment() {
                         }
                     }
                 }
+
                 Utils.REQUEST_VIDEO_PICK -> {
                     val videoUri = data?.data
                     lifecycleScope.launch {
@@ -286,6 +292,7 @@ class ChatFragment : Fragment() {
                         }
                     }
                 }
+
                 Utils.REQUEST_FILE_PICK -> {
                     val fileUri = data?.data
                     lifecycleScope.launch {
@@ -385,14 +392,22 @@ class ChatFragment : Fragment() {
                 args.users.userid!!,
                 args.users.username!!,
                 args.users.imageUrl!!,
-                publicUrl)
+                publicUrl
+            )
 
 
         } catch (e: Exception) {
-            Toast.makeText(context, "Failed to upload image: ${e.message}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Failed to upload image: ${e.message}", Toast.LENGTH_SHORT)
+                .show()
         }
 
     }
+
+    override fun onPause() {
+        super.onPause()
+        (chatBinding.messagesRecyclerView.adapter as? MessageAdapter)?.ReleasingPlayer()
+    }
+
 
 
 }
