@@ -38,7 +38,7 @@ class SignInActivity : AppCompatActivity() {
         signinauth = FirebaseAuth.getInstance()
 
 
-        if(signinauth.currentUser != null){
+        if(signinauth.currentUser != null && intent.getBooleanExtra("Just signed up", false)){
             startActivity(Intent(this, MainActivity::class.java))
         }
 
