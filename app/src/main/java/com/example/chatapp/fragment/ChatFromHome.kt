@@ -25,6 +25,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.media3.exoplayer.ExoPlayer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -99,6 +100,7 @@ class ChatFromHome : Fragment() {
 
 
 
+
         chatAppviewModel = ViewModelProvider(this).get(ChatAppviewModel::class.java)
 
 
@@ -140,6 +142,7 @@ class ChatFromHome : Fragment() {
 
         friendImage.setOnClickListener {
             Utils.showFullImage(requireContext(), args.recentchats.friendImage!!)
+            (chatfromhomeBinding.messagesRecyclerView.adapter as? MessageAdapter)?.ReleasingPlayer()
         }
 
 
@@ -226,14 +229,13 @@ class ChatFromHome : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-         (chatfromhomeBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
+
         statusListener?.remove()
         statusListener = null
     }
 
-    fun stopvideo(){
-        (chatfromhomeBinding.messagesRecyclerView.adapter as? MessageAdapter)?.releaseAllPlayers()
-    }
+
+
 
     @SuppressLint("QueryPermissionsNeeded")
     private fun pickImageFromGallery() {
@@ -261,8 +263,8 @@ class ChatFromHome : Fragment() {
 
     @SuppressLint("QueryPermissionsNeeded")
     private fun takeVideoWithCamera() {
-        val takePictureIntent = Intent(MediaStore.ACTION_VIDEO_CAPTURE)
-        startActivityForResult(takePictureIntent, Utils.REQUEST_VIDEO_CAPTURE)
+        val takeVideoIntent = Intent(MediaStore.ACTION_VIDEO_CAPTURE)
+        startActivityForResult(takeVideoIntent, Utils.REQUEST_VIDEO_CAPTURE)
     }
 
 
@@ -414,8 +416,9 @@ class ChatFromHome : Fragment() {
 
     }
 
-
-
-
-
+    override fun onPause() {
+        super.onPause()
+        Log.d("ChatFragment", "onPause called")
+        (chatfromhomeBinding.messagesRecyclerView.adapter as? MessageAdapter)?.ReleasingPlayer()
+    }
 }
