@@ -79,7 +79,9 @@ class OTPActivity : AppCompatActivity() {
                                     "imageUrl" to "https://cdn-icons-png.flaticon.com/512/4128/4128244.png"
                                 )
                                 firestore.collection("Users").document(user.uid).set(userHashMap)
-                                startActivity(Intent(this, SignInActivity::class.java))
+                                 val intent = Intent(this, SignInActivity::class.java)
+                                intent.putExtra("Just signed up", true)
+                                startActivity(intent)
                                 Toast.makeText(
                                     this@OTPActivity, "Đăng ký thành công", Toast.LENGTH_LONG
                                 )
