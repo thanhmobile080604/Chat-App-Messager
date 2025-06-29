@@ -93,6 +93,7 @@
                         android:maxHeight="300dp"
                         android:visibility="gone" />
                 </androidx.cardview.widget.CardView>
+
             </LinearLayout>
 
             <TextView
