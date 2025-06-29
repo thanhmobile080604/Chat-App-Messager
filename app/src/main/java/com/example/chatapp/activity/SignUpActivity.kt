@@ -89,7 +89,7 @@ class SignUpActivity : AppCompatActivity() {
                 signupBinding.signUpBtn.visibility = View.VISIBLE
                 return@setOnClickListener
             }
-            if (!signupBinding.signUpEmail.text.toString().endsWith("@gmail.com")) {
+            if (!signupBinding.signUpEmail.text.toString().endsWith(".com")) {
                 signupBinding.signUpEmail.error = "Hãy nhập đúng định dạng email"
                 signupBinding.signUpEmail.setSelection(signupBinding.signUpEmail.text?.length ?: 0)
                 signupBinding.signupProgressBar.visibility = View.GONE
